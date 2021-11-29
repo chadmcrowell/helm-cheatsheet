@@ -23,5 +23,32 @@
 ```bash
 # install an app named 'mongodb' using the chart 'bitnami/mongodb' with values passed in using file values1.yml
 helm install mongodb --values values1.yml bitnami/mongodb
+
+# dry-run for our app named 'mongodb' passing in the values from values2.yml
+helm template -f values2.yml mongodb
+
+# lint the manifests for the app named 'mongodb', passing in values2.yml
+helm lint -f values2.yml mongodb
 ```
 
+---
+
+## Create Charts
+
+```bash
+# create a new chart template named dev-app (contains `chart.yml`, `values.yml`, charts and templates directory)
+helm create dev-app
+
+
+```
+
+---
+
+## Manage Repositories
+
+```bash
+# add a chart named 'bitnami' at the public address https://charts.bitnami.com/bitnami
+helm repo add bitnami https://charts.bitnami.com/bitnami
+
+
+```
