@@ -6,8 +6,6 @@ Everything is installed inside of a docker container (must have Docker installed
 - [Install Docker on Windows](https://docs.docker.com/desktop/windows/install/)
 - [Install Docker on Mac](https://docs.docker.com/desktop/mac/install/)
 
----
-
 ## Create a single node Kubernetes cluster using Kind
 - [kind docs](https://kind.sigs.k8s.io/docs/user/quick-start/)
 
@@ -15,13 +13,10 @@ Everything is installed inside of a docker container (must have Docker installed
 kind create cluster --name virt --image kindest/node:v1.23.0
 ```
 
----
-
 ## Create a container to work with Helm
 ```bash
 docker run -it --rm -v ${HOME}:/root/ -v ${PWD}:/workdir -w /$ --net host alpine sh
 ```
----
 
 ## Install kubectl inside the container
 ```bash
@@ -30,8 +25,6 @@ install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 kubectl version --client
 kubectl get no
 ```
-
----
 
 ## Install helm inside the container
 ```bash
