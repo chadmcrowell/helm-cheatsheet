@@ -19,6 +19,12 @@
 
 ---
 
+## Play with Helm
+
+- [Install Helm on a Kind cluster in a container](play_with_helm.md)
+
+---
+
 ## Install Apps
 
 ```bash
