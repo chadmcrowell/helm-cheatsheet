@@ -77,5 +77,17 @@ helm create dev-app
 # add a chart named 'bitnami' at the public address https://charts.bitnami.com/bitnami
 helm repo add bitnami https://charts.bitnami.com/bitnami
 
+# list repos
+helm repo list
+
+# search repos for 'apache'
+helm search repo apache
+
+# search and list versions
+helm search repo mysql --versions
+
+# remove repo
+helm repo remove bitnami
+
 
 ```
